@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+</head>
+<body>
+    <script>
+        // Get URL query parameters
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            
+            for (const [key, value] of urlParams.entries()) {
+                params[key] = value;
+            }
+            
+            return params;
+        }
+
+        function processDecisionTree(params) {
+            // window.location.href = whatever
+            
+        }
+
+        // Run when the page loads
+        window.onload = function() {
+            const params = getQueryParams();
+            
+            // Process the decision tree
+            processDecisionTree(params);
+        };
+    </script>
+</body>
+</html>
