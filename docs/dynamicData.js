@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const progressSteps = document.querySelectorAll('.progress-step');
-    const restartBtn = document.querySelector('.restart-button');
 
     // Initialize step navigation
     updateStepUI();
@@ -53,14 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners for navigation buttons
     prevBtn.addEventListener('click', goToPreviousStep);
     nextBtn.addEventListener('click', goToNextStep);
-
-    // Restart button event listener
-    if (restartBtn) {
-        restartBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            resetToFirstStep();
-        });
-    }
 
     // Functions for step navigation
     function goToNextStep() {
