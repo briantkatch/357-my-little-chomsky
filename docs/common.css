@@ -408,6 +408,7 @@ footer {
     width: 80%;
     max-width: 300px;
     text-align: center;
+    text-decoration: none;
 }
 
 .cta-button:hover {
