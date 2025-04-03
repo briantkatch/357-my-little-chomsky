@@ -4,7 +4,3 @@
     --carrier-light-tint: #ffebee;
     --carrier-dark-tint: #c4001d;
 }
-
-body header img {
-    object-fit: contain;
-}
