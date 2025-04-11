@@ -69,4 +69,4 @@ for (let plan of plans) {
     }
 }
 
-window.location.href = "https://briantkatch.github.io/357-my-little-chomsky/" + bestPlanId + ".html?neededData=" + neededData + "&travelPref=" + travel_pref;
+window.location.href = "https://briantkatch.github.io/357-my-little-chomsky/" + bestPlanId + ".html?neededData=" + neededData + "&travelPref=" + travel_pref + "&name=" + name;

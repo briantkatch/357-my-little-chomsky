@@ -21,9 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const neededData = parseFloat(urlParams.get('neededData')) || 10;
     const travelPref = urlParams.get('travelPref') === 'true';
+    const name = urlParams.get('name') || '';
 
     // Update the user's needed data display
-    document.getElementById('neededDataElement').textContent = neededData;
+    document.getElementById('neededDataElement').textContent = (neededData - 1) + " to " + (neededData + 1);
+
+    // Show the user's name if we got it
+    if (name !== '') {
+        document.getElementById("nameArea").textContent = name + ", "
+    }
 
     // Show notice if user didn't request roaming but is shown roaming plan due to best
     // value
