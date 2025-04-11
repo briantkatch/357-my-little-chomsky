@@ -1,8 +1,8 @@
 :root {
-    --theme-primary: #0000df;
-    --theme-secondary: #9b9bff;
-    --theme-light-tint: #e9e9ff;
-    --theme-dark-tint: #0000af;
+    --theme-primary: #45b3e0;
+    --theme-secondary: #8FD1EC;
+    --theme-light-tint: #e8f5fb;
+    --theme-dark-tint: #46a3ca;
     --text-dark: #333333;
     --text-light: #ffffff;
     --gray-light: #f5f5f5;
@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     padding: 0;
     background-color: white;
     color: var(--text-dark);
@@ -158,6 +158,10 @@ footer {
 
 /* Data usage explanation step */
 
+#nameArea {
+    text-transform: capitalize;
+}
+
 .usage-visualization {
     display: flex;
     flex-wrap: wrap;
@@ -210,7 +214,7 @@ footer {
 .plan-card {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     padding: 30px;
     margin-bottom: 30px;
 }
@@ -344,7 +348,7 @@ footer {
     background-color: var(--gray-light);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .comparison-card.current {
